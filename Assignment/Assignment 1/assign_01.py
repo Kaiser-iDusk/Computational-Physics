@@ -16,7 +16,7 @@ max_iter = 1000
 found = True
 
 iter = 0
-z_init = 0.2
+z_init = 0.95
 
 error = abs(f(z_init))
 
