@@ -1,3 +1,6 @@
+# Author: Shirsendu Pal
+# CH22BTECH11033
+
 import numpy as np
 
 def f(z):
