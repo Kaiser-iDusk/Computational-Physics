@@ -32,7 +32,7 @@ def simpson(f, N, spanx):
     fwd = 0.0
     
     for i in range(0, N, 2):
-        mid = simpson_y(f, a + dx * (i + 1), N, [- np.sqrt(1 - (a + dx * (i+1))**2), np.sqrt(1 - (a + dx * (i+1))**2)])
+        mid = simpson_y(f, a + dx * (i + 1), N, [- np.sqrt(1 - (a + dx * (i+1))**2), np.sqrt(1 - (a + dx * (i+1))**2)] )
         fwd = simpson_y(f, a + dx * (i + 2), N, [- np.sqrt(1 - (a + dx * (i+2))**2), np.sqrt(1 - (a + dx * (i+2))**2)])
 
         I += (dx / 3) * (curr + 4*mid + fwd)
@@ -41,6 +41,6 @@ def simpson(f, N, spanx):
 
     return I
 
-result = simpson(f, 1000, [-1, 1])
+result = simpson(f, 500, [-1, 1])
 
 print(f"The result of integral is: {result}")
