@@ -21,9 +21,9 @@ def verlet(r0, v0, time, dt):
 
 r0 = np.array([[0], [0]])
 v0 = np.array([[0], [0]])
-time = [0, 50]
+time = [0, 100]
 
-dt = 1e-2
+dt = 1e-3
 
 results = verlet(r0, v0, time, dt)
 results = results.reshape(-1, 2)

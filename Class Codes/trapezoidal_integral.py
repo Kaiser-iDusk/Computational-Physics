@@ -13,6 +13,6 @@ dx = (intv[1] - intv[0]) / N
 I = 0.0
 
 for i in range(0, N):
-    I += dx * f(i * dx)
+    I += 0.5 * dx * (f(i*dx) + f((i+1)*dx))
 
-print(f"Reimann Integration = {I}")
+print(f"Trapezoidal Integration = {I}")
